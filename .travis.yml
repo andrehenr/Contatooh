@@ -22,7 +22,7 @@ before_script:
   - grunt
   - cd dist
 script:
- - karma start config/karma.config.js --browsers Chrome
+ - karma start config/karma.config.js --single-run --browsers Chrome,ChromeCanary
  - node server &
  - protractor config/protractor.js
 
